@@ -26,11 +26,8 @@ class MainActivity : AppCompatActivity() {
       "Fir bhi tum ko ","Filhall", "Ashiq hu", "Song 1","Kinna Sona","Lo Maan Liya","Milne Hai Mujhse Aayi","Piya Aye","Song 2","Song 3",
         "Sanam Teri Kasam","Bhula Dena Mujhe","Bewajah","Teri Aadat 2","Banjaara","Humnava Mere","Bol Do","Galliyan",
         "Thoda Thoda Pyaar","Hone Laga Tumse","Tera Chehra","Tere Liye","Thodi Jagah","Tum Hi Aana",
-        "Ukha Hi Banana","Zaroorat","galti",
-        "deewaane",
-        "deewaniyat",
-        "tu hi haqeeqat",
-        "hua hain aj pehlibaar")
+        "Ukha Hi Banana","Zaroorat","Galti","Deewaane", "Deewaniyat",
+        "Tu Hi Haqeeqat", "Hua Hain Aj Pehlibaar")
     private val noisyReceiver = object : BroadcastReceiver() {
         override fun onReceive(context: Context?, intent: Intent?) {
             if (intent?.action == AudioManager.ACTION_AUDIO_BECOMING_NOISY) {
