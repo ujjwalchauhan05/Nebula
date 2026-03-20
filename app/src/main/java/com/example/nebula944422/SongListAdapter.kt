@@ -1,4 +1,4 @@
-package com.example.nebula944422
+package com.example.nebula
 
 import android.view.LayoutInflater
 import android.view.View
