@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.nebula944422"
+    namespace = "com.example.nebula"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.example.nebula944422"
+        applicationId = "com.example.nebula"
         minSdk = 28
         targetSdk = 36
         versionCode = 1
