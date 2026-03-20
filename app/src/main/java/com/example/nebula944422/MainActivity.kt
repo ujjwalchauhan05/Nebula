@@ -16,18 +16,9 @@ import android.os.Build
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
 class MainActivity : AppCompatActivity() {
-    private val songs = listOf(
-      R.raw.phir_bhi_tum_ko, R.raw.filhall, R.raw.aashiq_hoon,R.raw.song1, R.raw.kinna_sona,R.raw.lo_maan_liya,R.raw.milne_hai_mujhse_ayi,
-        R.raw.piya_aye,R.raw.song2, R.raw.song3,R.raw.sanam_teri_kasam,R.raw.bhuladenamujhe,R.raw.bewajah,
-        R.raw.teri_aadat2,R.raw.banjaara,R.raw.humnava_mere,R.raw.bol_do,R.raw.galliya,
-        R.raw.thoda_thoda_pyaar,R.raw.hone_laga_tumse,R.raw.tera_chehra,R.raw.tereliye,
-        R.raw.thodi_zagahe,R.raw.tum_hi_ana,R.raw.ukha_hi_banana,R.raw.zaroorat,R.raw.galti,R.raw.deewaane,R.raw.deewaniyat,R.raw.tu_hi_haqeeqat,R.raw.hua_hain_aj_pehlibaar)
-    private val songNames = listOf(
-      "Fir bhi tum ko ","Filhall", "Ashiq hu", "Song 1","Kinna Sona","Lo Maan Liya","Milne Hai Mujhse Aayi","Piya Aye","Song 2","Song 3",
-        "Sanam Teri Kasam","Bhula Dena Mujhe","Bewajah","Teri Aadat 2","Banjaara","Humnava Mere","Bol Do","Galliyan",
-        "Thoda Thoda Pyaar","Hone Laga Tumse","Tera Chehra","Tere Liye","Thodi Jagah","Tum Hi Aana",
-        "Ukha Hi Banana","Zaroorat","Galti","Deewaane", "Deewaniyat",
-        "Tu Hi Haqeeqat", "Hua Hain Aj Pehlibaar")
+    
+    private val songs = listOf()  // 🔹 enter name of files in this 
+    private val songNames = listOf()  // 🔹 enter name of songs in this 
     private val noisyReceiver = object : BroadcastReceiver() {
         override fun onReceive(context: Context?, intent: Intent?) {
             if (intent?.action == AudioManager.ACTION_AUDIO_BECOMING_NOISY) {
