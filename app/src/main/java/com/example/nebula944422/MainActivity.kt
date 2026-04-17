@@ -22,10 +22,7 @@ class MainActivity : AppCompatActivity() {
     private val noisyReceiver = object : BroadcastReceiver() {
         override fun onReceive(context: Context?, intent: Intent?) {
             if (intent?.action == AudioManager.ACTION_AUDIO_BECOMING_NOISY) {
-                pauseSong()
-            }
-        }
-    }
+                pauseSong() } }}
     private var currentIndex = 0
     private var mediaPlayer: MediaPlayer? = null
     private var isPlaying = false
@@ -55,11 +52,9 @@ class MainActivity : AppCompatActivity() {
         prepareSong()
         when (intent?.action) {
             ACTION_PLAY_PAUSE -> {
-                if (isPlaying) pauseSong() else playSong()
-            }
+                if (isPlaying) pauseSong() else playSong()}
             ACTION_NEXT -> playNext()
-            ACTION_PREV -> playPrevious()
-        }
+            ACTION_PREV -> playPrevious() }
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             val channel = NotificationChannel(
                 CHANNEL_ID,
@@ -163,7 +158,6 @@ class MainActivity : AppCompatActivity() {
             this, 2, prevIntent,
             PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
         )
-
         val notification = NotificationCompat.Builder(this, CHANNEL_ID)
             .setSmallIcon(android.R.drawable.ic_media_play)
             .setContentTitle(songNames[currentIndex])
