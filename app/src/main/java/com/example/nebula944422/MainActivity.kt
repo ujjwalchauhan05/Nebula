@@ -32,7 +32,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var seekBar: SeekBar
     private lateinit var txtSong: TextView
     private val handler = Handler(Looper.getMainLooper())
-
     companion object {
         private const val CHANNEL_ID = "music_channel"
         private const val ACTION_PLAY_PAUSE = "PLAY_PAUSE"
