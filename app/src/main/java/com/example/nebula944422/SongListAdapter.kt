@@ -26,6 +26,5 @@ class SongListAdapter(
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.title.text = songs[position]
     }
-
     override fun getItemCount() = songs.size
 }
